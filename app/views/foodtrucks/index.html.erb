@@ -1,0 +1,12 @@
+<%= gmaps4rails(@json) %>
+
+<h1>Truck Locations</h1>
+<% @foodtrucks.each do | foodtruck | %>
+  <div class= "foodtruck_list">
+    <h4><%= foodtruck.name %><h4>
+    <h6><%= foodtruck.type_of_food %></h6>
+    <h6><%= foodtruck.sample_item %> </h6>
+    <h6> <%= foodtruck.link %> </h6>
+    <h6> <%= foodtruck.twitter %> </h6>
+  </div>
+<% end %>

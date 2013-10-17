@@ -1,0 +1,29 @@
+<h1>Edit Your Food Truck Information</h1>
+
+<h1><%= @foodtruck.name %></h1>
+<h3><%= @foodtruck.type_of_food %></h3>
+<h3><%= @foodtruck.sample_item %> </h3>
+<h3> <%= @foodtruck.link %> </h3>
+<h3> <%= @foodtruck.twitter %>
+
+<%= form_for @foodtruck do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :type_of_food%>
+  <%= f.text_field :type_of_food %>
+
+  <%= f.label :sample_item %>
+  <%= f.text_field :sample_item %>
+
+  <%= f.label :link %>
+  <%= f.text_field :link %>
+
+  <%= f.label :twitter %>
+  <%= f.text_field :twitter %>
+
+  <%= f.label :password %>
+  <%= f.text_field :password %>
+
+  <%= f.submit "Save" %>
+<% end %>
